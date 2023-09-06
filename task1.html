@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply some basic styling to your website */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #87CEEB;
+        }
+
+        header {
+            background-color: #0074D9;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Additional styles can be added to enhance the appearance of your website */
+        .hidden {
+            display: none;
+        }
+    </style>
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <p2>Hello Everyone! I'm Namrta,Now I am currently pursuing my Bachelor's degree in Computer Engineering at sppu university i am also 3 year student . I am passionate about problem-solving and enjoy tackling challenging coding projects. Some of the key skills I've developed during my studies include programming in languages such as C++, Python,c++, and Java, as well as proficiency in data structures and algorithms.
+As I continue my journey in computer engineering, I am eager to expand my knowledge and contribute to the ever-evolving tech industry. Feel free to explore my portfolio to see some of the projects I've worked on and the skills I've acquired along the way.</p2></p>
+        </div>
+    
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- Add details of your projects here -->
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Temperature converter</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Women Empowerment</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach me at <a href="namrta@gmail.com">namrta@gmail.com</a>.</p>
+        </div>
+    </section>
+
+    <section id="details" class="hidden">
+        <div class="container">
+            <h2>Additional Details</h2>
+            <p>These are some additional details about me that you can reveal by clicking the button below:</p>
+            <button id="show-details">Show Details</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 namrta</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the "details" section when the button is clicked
+        document.addEventListener("DOMContentLoaded", function () {
+            const showDetailsButton = document.getElementById("show-details");
+            const detailsSection = document.getElementById("details");
+
+            showDetailsButton.addEventListener("click", function () {
+                detailsSection.classList.toggle("hidden");
+                if (detailsSection.classList.contains("hidden")) {
+                    showDetailsButton.textContent = "Show Details";
+                } else {
+                    showDetailsButton.textContent = "Hide Details";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
